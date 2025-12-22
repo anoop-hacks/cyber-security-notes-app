@@ -8,7 +8,7 @@ This project is designed to help students **organize daily learning**, revise co
 ## 🚀 Purpose of This Project
 
 - Maintain **structured cyber security notes** from Day-1
-- Learn web development while studying **Cyber Security**
+- Learning web development while studying **Cyber Security**
 - Build a **personal knowledge base**
 - Create a **resume-ready project**
 - Practice consistency and documentation
