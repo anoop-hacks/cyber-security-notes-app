@@ -9,12 +9,38 @@ body {
   height: 100%;
   width: 100%;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+#main{
+  overflow-x: hidden;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dadada; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(39, 39, 39);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 nav {
   display: flex;
   justify-content: space-between;
   padding: 15px 50px;
   border-bottom: 3px solid black;
+   position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 10;
 }
 nav ul {
   display: flex;
@@ -87,6 +113,10 @@ nav ul a:hover {
   
 
 }
+nav{
+ 
+  /* backdrop-filter: blur(20px); */
+}
 .content{
   display: flex;
   justify-content: center;
@@ -123,8 +153,8 @@ nav ul a:hover {
 #main .hero-section{
   min-height: 100%;
   /* background-color: red; */
-  padding-bottom: 200px;
-  padding-top: 70px;
+  padding-bottom: 160px;
+  padding-top: 100px;
 }
 .content .two{
   display: flex;
@@ -202,4 +232,88 @@ nav ul a:hover {
   cursor: pointer;
   transform: translateY(-4px);
   background-color: rgb(240, 238, 238);
+}
+.hero2 *{
+  text-align: center;
+}
+.hero2 h1{
+  font-size: 60px;
+}
+.hero2 .desc{
+  font-size: 17px;
+  color: grey;
+  margin-left: 259px;
+  margin-right: 259px;
+  margin-top: 20px;
+}
+.content-hero2{
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-flow: row;
+}
+.hero2-one, .hero2-two{
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+.box{
+  border: 1px solid black;
+  display: flex;
+  height: 200px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 600px;
+  background-color: rgb(255, 252, 249);
+  transition: all 0.2s ease-in;
+}
+.box:hover{
+  cursor: pointer;
+  transform: translateY(-8px);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.139) ;
+}
+.hero2-logo i{
+  font-size: 25px;
+  color: rgb(255, 191, 0);
+}
+.hero2-logo{
+  /* height: 40px; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  border-radius: 4px;
+  padding: 3px;
+  background-color:rgb(255, 244, 210) ;
+}
+.box .title, .box .para{
+  text-align: left;
+}
+.content-hero2 .texts{
+  display: flex;
+  flex-flow: column;
+  gap: 7px;
+}
+.patti{
+  background-color: #1e1e1e;
+  color: white;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 33px;
+  margin-bottom: 170px;
+  transform: rotate(1deg);
+}
+.patti i{
+  color: rgb(255, 191, 0);
 }
